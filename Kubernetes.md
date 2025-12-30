@@ -25,4 +25,6 @@
 
 ### How to create a POD
 
+       kubectl apply -f pod.yml
+
 <img width="1727" height="967" alt="Screenshot 2025-12-30 at 11 06 33 AM" src="https://github.com/user-attachments/assets/8f75beed-e231-4edc-9e93-dd979437051e" />
