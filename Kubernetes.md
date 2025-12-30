@@ -47,3 +47,34 @@
    
 
 <img width="1727" height="967" alt="Screenshot 2025-12-30 at 11 06 33 AM" src="https://github.com/user-attachments/assets/8f75beed-e231-4edc-9e93-dd979437051e" />
+
+### Replica Set
+
+ --> It contains to how many numbeer of copy of the pod.
+
+ --> Pod creating file called as PodManifest file(yml)
+
+ --> Replica creating file called as ReplicaManifest file (yml)
+
+ --> Matching labels and Pod labels should be same
+
+ --> Controller Manager having different controller like ReplicaSet Controller, StatefulSet Controller, DeameonSet Controller, etc..
+
+ --> ReplicaSet Controller maintain the replicaset what we created. It will check any replica is avaialble in the pod if anything availble it will ask and maintain the desire state of the replica.
+
+ --> Self Healing process handle by Replica Controller.
+
+<img width="3438" height="1932" alt="image" src="https://github.com/user-attachments/assets/8597498c-f062-4f03-a064-61b5714d5c10" />
+
+
+--> To check replica set using below cmd
+
+        kubectl get rs
+
+  <img width="1346" height="850" alt="Screenshot 2025-12-30 at 1 27 52 PM" src="https://github.com/user-attachments/assets/58ec40b8-11b1-466a-9479-4a2e12dad4fe" />
+
+  If we are deleting all the pod also it will be keep 3 parts because we already mention in the yml file above as the replica as 3.
+
+  <img width="1342" height="847" alt="Screenshot 2025-12-30 at 1 29 30 PM" src="https://github.com/user-attachments/assets/a10e3388-6fc4-48b4-b206-d5b7b3a12173" />
+
+      
