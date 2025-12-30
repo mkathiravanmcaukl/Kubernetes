@@ -35,4 +35,11 @@
 
       kubectl get pods -o wide
 
+ To check full detail of the pod 
+
+     kubectl describe pods podName
+
+  <img width="1720" height="930" alt="Screenshot 2025-12-30 at 12 58 20 PM" src="https://github.com/user-attachments/assets/58cd49d1-429b-43c7-b5dc-227940c12260" />
+   
+
 <img width="1727" height="967" alt="Screenshot 2025-12-30 at 11 06 33 AM" src="https://github.com/user-attachments/assets/8f75beed-e231-4edc-9e93-dd979437051e" />
