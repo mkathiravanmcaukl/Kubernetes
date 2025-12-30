@@ -19,3 +19,5 @@
 ### Kubernetes POD
 
  --> When we create a container it will store inside the POD. POD will provider network, database for the container. When we create a POD each POD having unique IP address. If any POD is communicate with another POD it should know the IP address of another POD. Pods are isolated from each other. We can have multiple container inside a POD
+
+ --> Continer inside the a POD, shares the network and storage. Containers inside a POD can communicate without IP address. For example if POD having two container one is working good and another one is getting crash means Kubernets will remove the whole POD and create a new POD with the two containers. So in this scenario we can create each container will create with separeate POD so one container will crash then particular POD will be only remove from kubernets other POD will run smootly. When this type of scenario is happen means one application depends on another application(Tightly coupled applications). 
