@@ -13,3 +13,6 @@
 --> **CONTAINER RUNTIME** will create an image pull, container run and remove all the processes handle by **CRI(Container Runtime Interface)**
 
 --> **KUBELET** will monitor all the container process whether it is running or not and crash. If any container will crash then **KUBELET** will inform to the CRI to remove the container. **KUBELET** will inform to the **API server** we have removed one container. **API Manager** will inform to the **Controller Manager** to check the state 
+
+<img width="1711" height="1033" alt="Screenshot 2025-12-30 at 10 50 20 AM" src="https://github.com/user-attachments/assets/be7d28a8-ab6b-4ba2-8995-902d64ea7550" />
+
