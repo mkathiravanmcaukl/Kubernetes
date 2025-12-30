@@ -39,6 +39,10 @@
 
      kubectl describe pods podName
 
+ For delete a pod
+
+    kubectl delete pod podName
+
   <img width="1720" height="930" alt="Screenshot 2025-12-30 at 12 58 20 PM" src="https://github.com/user-attachments/assets/58cd49d1-429b-43c7-b5dc-227940c12260" />
    
 
