@@ -80,3 +80,5 @@
   --> If we want to create a replicaset using command we have to use the below command
 
    <img width="1342" height="847" alt="Screenshot 2025-12-30 at 1 29 30 PM" src="https://github.com/user-attachments/assets/117e3c97-faa1-4028-b20a-c9dabc621b4d" />
+
+ --> We can configure replica in two ways one is declarative way(yml file approach) second one is imperative way(command approach). Best way is the declarative way because if we mention or changed the replica set others also will know about the changes so will be easy to maintain.   
