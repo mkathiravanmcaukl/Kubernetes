@@ -6,4 +6,10 @@
 
 --> Kubernetes having two nodes one is master node and another one is slave node
 
----> Master node having controller manager, API server, ETCD and Scheduler. API server is important role in the master node. Every communication is done through API Server.
+---> Master node having controller manager, API server, ETCD and Scheduler. **API server** is important role in the master node. Every communication is done through API Server. **Controller manager** is maintain the state of the container. It maintain the desire state and actual state. **ETCD** maintain the databse so the API manager ask to the ETCD what is the desire state of the container. **Schedule**r is maintain where we have to create the container inside the worker node so it will check all the system CPU and memory according to that will create the container.  
+
+--> Each and every worker node having **KUBELET**. **API Server** will inform to the Kubelet we have to create one container with this image name so kubelet will inform to **CONTAINER RUNTIME** it will create a container. 
+
+--> **CONTAINER RUNTIME** will create an image pull, container run and remove all the processes handle by **CRI(Container Runtime Interface)**
+
+--> **KUBELET** will monitor all the container process whether it is running or not and crash. If any container will crash then **KUBELET** will inform to the CRI to remove the container. **KUBELET** will inform to the **API server** we have removed one container. **API Manager** will inform to the **Controller Manager** to check the state 
