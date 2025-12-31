@@ -165,6 +165,25 @@
 
   --> **Every time pods is crash or delete new pod will create how end points store all the new pod creation ip address?**
 
-   Ans: In the master node we have controller manager it will controll all the components. Controller manager having end point controller this end point controller will check any end point are availble or not, if it is availble it will check the end point selector label and this selector lable will check with all the PODS and matching this lable will update to the end point via controller manager so that end point will save the ip address. This process will keep running frequently so that end point will keep the new ip address of the POD
+   Ans: In the master node we have controller manager it will controll all the components. Controller manager having end point controller this end point controller will check any end point are availble or not, if it is availble it will check the end point selector label and this selector lable will check with all the PODS and matching this lable will update to the end point via controller manager so that end point will save the ip address. This process will keep running frequently so that end point will keep the new ip address of the POD.
 
+<img width="1720" height="963" alt="Screenshot 2025-12-31 at 12 21 04 PM" src="https://github.com/user-attachments/assets/677fff6d-1c75-4fab-9e6c-c8695055b688" />
 
+### Why do we need a service while pod has its own ip for communcation?
+
+  --> POD is Ephemeral because it is not stable. So that we are using service so service having stable ip address and act as a load balancer. 
+
+### How does a service know which pod to forward the traffic to?
+
+--> While creating a service via yml file we have selector section and this label field will be there that label field will match with POD
+
+         selector:
+            app: backend
+
+ ### What is the role of kube-proxy in kubernetes networking?
+
+   --> Kube proxy runs on every node. It manages iptables on every nodes. When a request comes to a service IP, kube-proxy forward it to one of the backend POD IPs, doing load balancing.
+
+ ### What is an Endpoint in Kubernetes, and how is it managed?
+
+   --> An EndPoint is a kubernetes object that maps a service to its actual POD IPs. It is automatically updated by the EndPoint Controller 
