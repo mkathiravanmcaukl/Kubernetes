@@ -117,3 +117,8 @@
         
 
  --> Minikube will create worker and master node on the same machine
+
+ --> The below command will show worker node and master node on the same machine 
+
+ <img width="1673" height="729" alt="Screenshot 2025-12-31 at 11 37 59 AM" src="https://github.com/user-attachments/assets/8da2b579-7cc7-431e-b40b-6007222dd683" />
+
