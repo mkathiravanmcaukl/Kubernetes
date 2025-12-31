@@ -122,3 +122,7 @@
 
  <img width="1673" height="729" alt="Screenshot 2025-12-31 at 11 37 59 AM" src="https://github.com/user-attachments/assets/8da2b579-7cc7-431e-b40b-6007222dd683" />
 
+
+## Kubernetes Service:
+
+--> Service will help to communicate between PODS. Without service also we can communicate between PODS but if any POD will crash then kubernetes will do the self healing means to create another POD so that time ip addres will be change so can not able to communicate so that is the reason service will help to communicate the POD. Service having unique ip address that will store in the POD
