@@ -212,6 +212,9 @@
 
  --> It opens a port on all nodes in the cluster. If some want to access from outside to service they have to use the node-ip: node port. Most important thing is this node port only use for testing only not for production.Because we are opening a port in every node so this is not a safe approach.
 
+ --> Node port number should be given the range between 30000 - 32767
 
+**3. Headless Service** : When the service want to send the request using load balancer for particuluar POD we have to set the cluster as none.
 
+<img width="1432" height="970" alt="Screenshot 2025-12-31 at 2 20 45 PM" src="https://github.com/user-attachments/assets/c35966ac-061b-4caa-ab0a-c370bb94ce28" />
 
