@@ -1,4 +1,4 @@
-<img width="1691" height="832" alt="Screenshot 2025-12-31 at 2 24 42 PM" src="https://github.com/user-attachments/assets/5fef27d1-4c6f-4808-93aa-72b6bfbb674e" />--> Kubernetes is an orchestration tool
+--> Kubernetes is an orchestration tool
 
 ### Self Healing
 
