@@ -86,3 +86,9 @@
  ### What is the use of ReplicaSet?
 
    --> A replicaSet ensures a specified number of identical pod replicas are running at all times.
+
+   <img width="1728" height="965" alt="Screenshot 2025-12-31 at 10 29 09 AM" src="https://github.com/user-attachments/assets/0a926838-1dea-44b4-a0f1-77c3c72c35f5" />
+
+   <img width="1723" height="963" alt="Screenshot 2025-12-31 at 10 29 36 AM" src="https://github.com/user-attachments/assets/3bdf31af-f61c-4d86-8272-e1abb532b431" />
+
+
