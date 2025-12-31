@@ -95,3 +95,10 @@
 --> Whenever we create a POD will be create inside the worker node. Master node will monitor all the POD is working or not inside the worker node. 
 
 <img width="1466" height="970" alt="Screenshot 2025-12-31 at 10 48 47 AM" src="https://github.com/user-attachments/assets/a9c8ee2d-3def-49ed-b41f-9871c0b9ff74" />
+
+### What is Cluster?
+
+   -> It is combination of worker and master node.
+
+   <img width="1447" height="963" alt="Screenshot 2025-12-31 at 10 50 43 AM" src="https://github.com/user-attachments/assets/abd768da-2cca-4fcf-9f51-16275ce2a585" />
+
