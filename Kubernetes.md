@@ -264,3 +264,19 @@
 
 <img width="1001" height="313" alt="Screenshot 2025-12-31 at 3 09 41 PM" src="https://github.com/user-attachments/assets/7b662bfb-a3e0-448a-aff5-5a1a2706ee08" />
       
+
+--> If we want to see live updates of the PODs need to use the below command
+
+     kubectl get pods --watch
+
+    Suppose i want to upgrade the application 1.0 to 2.0 means first need to stop the replica server and remove and then again create the replica set with the updated version.
+
+  <img width="1176" height="659" alt="Screenshot 2025-12-31 at 3 13 35 PM" src="https://github.com/user-attachments/assets/baf56691-7a6b-426a-9d9f-8ec9c3441efc" />
+
+  After delete the replica set again creating new replicaset using the below command. If we want to update anything via replica set we need to delete and again have to create it.
+
+  <img width="1528" height="847" alt="Screenshot 2025-12-31 at 3 17 11 PM" src="https://github.com/user-attachments/assets/3f3b499f-ec9a-499b-ba18-f3e61474b485" />
+
+
+  
+   
