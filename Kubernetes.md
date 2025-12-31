@@ -1,4 +1,4 @@
--> Kubernetes is an orchestration tool
+--> Kubernetes is an orchestration tool
 
 ### Self Healing
 
@@ -126,3 +126,12 @@
 ## Kubernetes Service:
 
 --> Service will help to communicate between PODS. Without service also we can communicate between PODS but if any POD will crash then kubernetes will do the self healing means to create another POD so that time ip addres will be change so can not able to communicate so that is the reason service will help to communicate the POD. Service having unique ip address that will store in the POD
+
+
+**There is a scenaio like we have one front end application so this front end application have to communicate back end application and database via service. So how to service knows which pod should it forward the request?**
+
+  -> When we create a service we have use the yml file so in that yml file **selector** section we have to add the label that lable should match with the POD label.
+
+<img width="1724" height="968" alt="Screenshot 2025-12-31 at 11 58 17 AM" src="https://github.com/user-attachments/assets/7ace6ce7-834e-4662-91a2-24542d19bb9c" />
+
+
