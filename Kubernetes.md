@@ -239,7 +239,20 @@
 
  --> A Deployment maintains a history of changes that occur at the Pod level.
 
- <img width="1482" height="793" alt="Screenshot 2025-12-31 at 2 54 04 PM" src="https://github.com/user-attachments/assets/1c1100f9-a012-436f-aeee-183f2eef750c" />
+ --> Create a deployment using replica set as below
+
+  <img width="1482" height="793" alt="Screenshot 2025-12-31 at 2 54 04 PM" src="https://github.com/user-attachments/assets/1c1100f9-a012-436f-aeee-183f2eef750c" />
+
+
+ <img width="1489" height="796" alt="Screenshot 2025-12-31 at 3 01 20 PM" src="https://github.com/user-attachments/assets/39fd69e9-a0d6-4d18-9ae5-494932ad2f68" />
+
+ <img width="1537" height="793" alt="Screenshot 2025-12-31 at 3 02 05 PM" src="https://github.com/user-attachments/assets/049cbf82-c0eb-46cf-8751-dd7c8f800c1c" />
+
+ The above screen shot container is creating once the container is created we have to check as below
+
+ <img width="799" height="332" alt="Screenshot 2025-12-31 at 3 04 11 PM" src="https://github.com/user-attachments/assets/21b1cb68-202e-438e-a999-48c53f9d82df" />
+
+
 
  --> In the attached screenshot in the **template section lables** whatever we mention that same thing we have to mention in the **selector matching labels**.
 
