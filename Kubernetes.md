@@ -278,5 +278,21 @@
   <img width="1528" height="847" alt="Screenshot 2025-12-31 at 3 17 11 PM" src="https://github.com/user-attachments/assets/3f3b499f-ec9a-499b-ba18-f3e61474b485" />
 
 
-  
-   
+  --> So the above steps if we are following using replicaSet we are facing the downtime issue to avoid this we are using the deployment.
+
+  --> To create a deployment file as using below command
+
+  <img width="1590" height="877" alt="Screenshot 2025-12-31 at 3 20 10 PM" src="https://github.com/user-attachments/assets/08ada7e7-d256-42b9-a63f-2cf331170b81" />
+
+   When we want to upgrade the version from 1.0 to 2.0 we dont need to delete the pod directly apply the changes using below command so that the zero downtime will happen.
+
+   <img width="1551" height="870" alt="Screenshot 2025-12-31 at 3 22 37 PM" src="https://github.com/user-attachments/assets/8c6c8b04-a822-48e2-9dea-314c75aae9e1" />
+
+   --> When we want to check the history of the updates we need to use the following command
+
+        kubectl rollout history deployment calculator-app-deployment
+
+<img width="589" height="301" alt="Screenshot 2025-12-31 at 3 26 45 PM" src="https://github.com/user-attachments/assets/340e6731-5efa-4709-8f1d-a821a07e51c0" />
+
+<img width="586" height="299" alt="Screenshot 2025-12-31 at 3 27 33 PM" src="https://github.com/user-attachments/assets/e510a7e7-2cbd-4c38-821c-c25445c943b6" />
+
