@@ -187,3 +187,31 @@
  ### What is an Endpoint in Kubernetes, and how is it managed?
 
    --> An EndPoint is a kubernetes object that maps a service to its actual POD IPs. It is automatically updated by the EndPoint Controller 
+
+
+## Type of Services:
+
+  **1. Cluster IP**: It will be useful we need to communicate within the cluster. This service only accessible within the cluster only not outside the cluster. 
+
+  <img width="1465" height="957" alt="Screenshot 2025-12-31 at 12 45 27 PM" src="https://github.com/user-attachments/assets/61be757f-2836-489b-959e-3411d6e46720" />
+
+    --> We will set cluter IP address so that we can access the service inside the cluster only. 
+
+    <img width="975" height="707" alt="Screenshot 2025-12-31 at 12 51 51 PM" src="https://github.com/user-attachments/assets/5e217319-3f53-4636-b6c3-91f3a88222e6" />
+
+    --> In the above attached screenshot we have ports section it has two ports . The first one is the service port the second one is target port(means POD port). For example front end POD application access to the backend POD application we need to call the backend POD application service so we need to do two things when we calling i) IP address or Service name ii) Service port.
+
+    <img width="1482" height="936" alt="Screenshot 2025-12-31 at 12 56 43 PM" src="https://github.com/user-attachments/assets/b605f606-a7be-4223-8d5c-22c7085ef905" />
+
+    --> This cluster ip is the default type of service. When we create a service in the yml file if we not mention any type then it will consider as cluster ip address.
+
+
+ **2. Node Port**: When we create a node port we have to mention 3 ports one is service port, target port and node port.
+
+ <img width="1482" height="936" alt="Screenshot 2025-12-31 at 12 56 43 PM" src="https://github.com/user-attachments/assets/35cb4a1b-7da5-4a16-ad30-3cc84a9982e5" />
+
+ --> It opens a port on all nodes in the cluster. If some want to access from outside to service they have to use the node-ip: node port. Most important thing is this node port only use for testing only not for production.Because we are opening a port in every node so this is not a safe approach.
+
+
+
+
