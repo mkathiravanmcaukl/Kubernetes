@@ -159,3 +159,12 @@
 <img width="1714" height="956" alt="Screenshot 2025-12-31 at 12 10 13 PM" src="https://github.com/user-attachments/assets/f15661a7-a3b5-4c42-8baf-73d0bca55f23" />
 
 --> If anyone send request to service it will goes to kube-proxy and kube-proxy check with the table of particular ip request and will forward the ip request. 
+
+
+### Scneario question: 
+
+  --> **Every time pods is crash or delete new pod will create how end points store all the new pod creation ip address?**
+
+   Ans: In the master node we have controller manager it will controll all the components. Controller manager having end point controller this end point controller will check any end point are availble or not, if it is availble it will check the end point selector label and this selector lable will check with all the PODS and matching this lable will update to the end point via controller manager so that end point will save the ip address. This process will keep running frequently so that end point will keep the new ip address of the POD
+
+
