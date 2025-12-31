@@ -256,3 +256,11 @@
 
  --> In the attached screenshot in the **template section lables** whatever we mention that same thing we have to mention in the **selector matching labels**.
 
+      kubectl get services
+
+--> The above command will list of all the services but suppose we want to use particular service means we need url so we have to use the following command
+
+      minikube service calculator-app-service --url
+
+<img width="1001" height="313" alt="Screenshot 2025-12-31 at 3 09 41 PM" src="https://github.com/user-attachments/assets/7b662bfb-a3e0-448a-aff5-5a1a2706ee08" />
+      
