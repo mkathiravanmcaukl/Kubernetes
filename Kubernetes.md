@@ -92,3 +92,6 @@
    <img width="1723" height="963" alt="Screenshot 2025-12-31 at 10 29 36 AM" src="https://github.com/user-attachments/assets/3bdf31af-f61c-4d86-8272-e1abb532b431" />
 
 
+--> Whenever we create a POD will be create inside the worker node. Master node will monitor all the POD is working or not inside the worker node. 
+
+<img width="1466" height="970" alt="Screenshot 2025-12-31 at 10 48 47 AM" src="https://github.com/user-attachments/assets/a9c8ee2d-3def-49ed-b41f-9871c0b9ff74" />
