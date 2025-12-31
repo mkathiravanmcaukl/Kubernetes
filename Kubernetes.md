@@ -82,3 +82,7 @@
    <img width="1342" height="847" alt="Screenshot 2025-12-30 at 1 29 30 PM" src="https://github.com/user-attachments/assets/117e3c97-faa1-4028-b20a-c9dabc621b4d" />
 
  --> We can configure replica in two ways one is declarative way(yml file approach) second one is imperative way(command approach). Best way is the declarative way because if we mention or changed the replica set others also will know about the changes so will be easy to maintain.   
+
+ ### What is the use of ReplicaSet?
+
+   --> A replicaSet ensures a specified number of identical pod replicas are running at all times.
