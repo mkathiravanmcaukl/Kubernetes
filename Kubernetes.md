@@ -109,3 +109,11 @@
   --> If we want to start cluster on local maching need to use the following command
 
           minikube start
+
+  <img width="850" height="566" alt="Screenshot 2025-12-31 at 11 32 53 AM" src="https://github.com/user-attachments/assets/e7c52240-6cbe-4ef1-8699-8d4ae4024b77" />
+
+  <img width="1550" height="833" alt="Screenshot 2025-12-31 at 11 33 07 AM" src="https://github.com/user-attachments/assets/df77f315-0bf1-4a13-af78-42afdbbea1d1" />
+
+        
+
+ --> Minikube will create worker and master node on the same machine
