@@ -149,3 +149,13 @@
 
  <img width="1727" height="969" alt="Screenshot 2025-12-31 at 12 05 23 PM" src="https://github.com/user-attachments/assets/4581fbcb-82e0-4859-8daf-3011ed5a55ae" />
 
+
+## What is kube-proxy?
+
+--> Kube-proxy runs in all worker nodes. So all the worker node having one kube-proxy. This kube-proxy having one table that stores service IP address and end points.
+
+<img width="1728" height="974" alt="Screenshot 2025-12-31 at 12 09 55 PM" src="https://github.com/user-attachments/assets/f370c18c-0881-4634-af42-dca44f9c45e4" />
+
+<img width="1714" height="956" alt="Screenshot 2025-12-31 at 12 10 13 PM" src="https://github.com/user-attachments/assets/f15661a7-a3b5-4c42-8baf-73d0bca55f23" />
+
+--> If anyone send request to service it will goes to kube-proxy and kube-proxy check with the table of particular ip request and will forward the ip request. 
