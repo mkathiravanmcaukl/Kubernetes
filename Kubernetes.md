@@ -225,4 +225,21 @@
 <img width="1337" height="914" alt="Screenshot 2025-12-31 at 2 24 52 PM" src="https://github.com/user-attachments/assets/981832e5-bdf8-4d7b-8484-1fa5dd909716" />
 
 
+## Kubernetes Deployment
+
+--> When we to upgrade application 1.0 to 2.o then delete the old pod and create the new pod using replica set facing downtime problem(means while creating new POD takes sometimes so that time user can not able to access the application it returns 404) even if we create a new POD and we are able to access the application but some flows are breaking means again we want to rollback to previous version 1.0 we have to set in the replicaset. So for this issue only we are solving using **deployment**.
+
+--> So hereafter we have create POD using deployment so it will create replica set and pod and it will solve the rolling updates.
+
+<img width="1728" height="943" alt="Screenshot 2025-12-31 at 2 38 35 PM" src="https://github.com/user-attachments/assets/6b39cc81-a4db-4172-b446-444a9c7e7c7f" />
+
+### How does deployment fix both downtime problem?
+
+ --> Using Rolling Update Strategy. In this scenario when the new update is coming it will create new POD and will delete the old POD. So this process will continue until the batch update so **zero downtime**
+
+ --> A Deployment maintains a history of changes that occur at the Pod level.
+
+ <img width="1482" height="793" alt="Screenshot 2025-12-31 at 2 54 04 PM" src="https://github.com/user-attachments/assets/1c1100f9-a012-436f-aeee-183f2eef750c" />
+
+ --> In the attached screenshot in the **template section lables** whatever we mention that same thing we have to mention in the **selector matching labels**.
 
