@@ -135,3 +135,17 @@
 <img width="1724" height="968" alt="Screenshot 2025-12-31 at 11 58 17 AM" src="https://github.com/user-attachments/assets/7ace6ce7-834e-4662-91a2-24542d19bb9c" />
 
 
+### How does service knows the ip address of the pod?
+
+--> When we create a service that time another component also will be create that is name is called **endpoint**. End point is one of the kubernetes components. 
+
+### What is the use of endpoint?
+
+  --> Endpoint will provide ip address of PODs. It will keep all the POD ip address.
+
+  <img width="1721" height="966" alt="Screenshot 2025-12-31 at 12 03 56 PM" src="https://github.com/user-attachments/assets/3849081d-0735-4de1-a559-77dd606f61a9" />
+
+ --> Service will provide us statble IP address and Endpoint provide us the IP address of the PODS
+
+ <img width="1727" height="969" alt="Screenshot 2025-12-31 at 12 05 23 PM" src="https://github.com/user-attachments/assets/4581fbcb-82e0-4859-8daf-3011ed5a55ae" />
+
