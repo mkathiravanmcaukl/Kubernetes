@@ -1,4 +1,4 @@
---> Kubernetes is an orchestration tool
+<img width="1691" height="832" alt="Screenshot 2025-12-31 at 2 24 42 PM" src="https://github.com/user-attachments/assets/5fef27d1-4c6f-4808-93aa-72b6bfbb674e" />--> Kubernetes is an orchestration tool
 
 ### Self Healing
 
@@ -217,4 +217,12 @@
 **3. Headless Service** : When the service want to send the request using load balancer for particuluar POD we have to set the cluster as none.
 
 <img width="1432" height="970" alt="Screenshot 2025-12-31 at 2 20 45 PM" src="https://github.com/user-attachments/assets/c35966ac-061b-4caa-ab0a-c370bb94ce28" />
+
+**4. External Name**: When we want to access anything outside from the cluster we have to use this service. For example if i want to access the weather api that is not inside the cluster it is in outside cluster but want to access means we have to use the External name.
+
+<img width="1691" height="832" alt="Screenshot 2025-12-31 at 2 24 42 PM" src="https://github.com/user-attachments/assets/ad5ff573-e35d-4f30-9c45-527d884d422d" />
+
+<img width="1337" height="914" alt="Screenshot 2025-12-31 at 2 24 52 PM" src="https://github.com/user-attachments/assets/981832e5-bdf8-4d7b-8484-1fa5dd909716" />
+
+
 
