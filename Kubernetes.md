@@ -102,3 +102,10 @@
 
    <img width="1447" height="963" alt="Screenshot 2025-12-31 at 10 50 43 AM" src="https://github.com/user-attachments/assets/abd768da-2cca-4fcf-9f51-16275ce2a585" />
 
+### Minikube
+
+  --> Minikube is local kubernetes, focusing on making it easy to learn and develop for kubernetes
+
+  --> If we want to start cluster on local maching need to use the following command
+
+          minikube start
